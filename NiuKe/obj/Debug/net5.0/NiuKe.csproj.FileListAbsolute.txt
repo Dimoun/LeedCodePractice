@@ -1,0 +1,16 @@
+K:\Project\Vs Project\LeetCode\NiuKe\bin\Debug\net5.0\NiuKe.runtimeconfig.json
+K:\Project\Vs Project\LeetCode\NiuKe\bin\Debug\net5.0\NiuKe.runtimeconfig.dev.json
+K:\Project\Vs Project\LeetCode\NiuKe\bin\Debug\net5.0\NiuKe.exe
+K:\Project\Vs Project\LeetCode\NiuKe\bin\Debug\net5.0\NiuKe.deps.json
+K:\Project\Vs Project\LeetCode\NiuKe\bin\Debug\net5.0\NiuKe.dll
+K:\Project\Vs Project\LeetCode\NiuKe\bin\Debug\net5.0\ref\NiuKe.dll
+K:\Project\Vs Project\LeetCode\NiuKe\bin\Debug\net5.0\NiuKe.pdb
+K:\Project\Vs Project\LeetCode\NiuKe\obj\Debug\net5.0\NiuKe.csproj.AssemblyReference.cache
+K:\Project\Vs Project\LeetCode\NiuKe\obj\Debug\net5.0\NiuKe.GeneratedMSBuildEditorConfig.editorconfig
+K:\Project\Vs Project\LeetCode\NiuKe\obj\Debug\net5.0\NiuKe.AssemblyInfoInputs.cache
+K:\Project\Vs Project\LeetCode\NiuKe\obj\Debug\net5.0\NiuKe.AssemblyInfo.cs
+K:\Project\Vs Project\LeetCode\NiuKe\obj\Debug\net5.0\NiuKe.csproj.CoreCompileInputs.cache
+K:\Project\Vs Project\LeetCode\NiuKe\obj\Debug\net5.0\NiuKe.dll
+K:\Project\Vs Project\LeetCode\NiuKe\obj\Debug\net5.0\ref\NiuKe.dll
+K:\Project\Vs Project\LeetCode\NiuKe\obj\Debug\net5.0\NiuKe.pdb
+K:\Project\Vs Project\LeetCode\NiuKe\obj\Debug\net5.0\NiuKe.genruntimeconfig.cache

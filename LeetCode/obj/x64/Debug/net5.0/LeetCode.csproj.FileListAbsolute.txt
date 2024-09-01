@@ -1,0 +1,5 @@
+K:\Project\Vs Project\LeetCode\LeetCode\obj\x64\Debug\net5.0\LeetCode.csproj.AssemblyReference.cache
+K:\Project\Vs Project\LeetCode\LeetCode\obj\x64\Debug\net5.0\LeetCode.GeneratedMSBuildEditorConfig.editorconfig
+K:\Project\Vs Project\LeetCode\LeetCode\obj\x64\Debug\net5.0\LeetCode.AssemblyInfoInputs.cache
+K:\Project\Vs Project\LeetCode\LeetCode\obj\x64\Debug\net5.0\LeetCode.AssemblyInfo.cs
+K:\Project\Vs Project\LeetCode\LeetCode\obj\x64\Debug\net5.0\LeetCode.csproj.CoreCompileInputs.cache

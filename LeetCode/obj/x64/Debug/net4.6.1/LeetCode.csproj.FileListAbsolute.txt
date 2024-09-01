@@ -1,0 +1,5 @@
+K:\Project\Vs Project\LeetCode\LeetCode\bin\x64\Debug\net4.6.1\LeetCode.runtimeconfig.json
+K:\Project\Vs Project\LeetCode\LeetCode\bin\x64\Debug\net4.6.1\LeetCode.runtimeconfig.dev.json
+K:\Project\Vs Project\LeetCode\LeetCode\obj\x64\Debug\net4.6.1\LeetCode.csprojAssemblyReference.cache
+K:\Project\Vs Project\LeetCode\LeetCode\obj\x64\Debug\net4.6.1\LeetCode.csproj.CoreCompileInputs.cache
+K:\Project\Vs Project\LeetCode\LeetCode\obj\x64\Debug\net4.6.1\LeetCode.AssemblyInfo.cs
