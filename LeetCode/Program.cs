@@ -6,44 +6,45 @@ using System;
 
 namespace LeetCode
 {
-    class Program
+    public class Program
     {
-        //static void Main(string[] args)
-        //{
-        //    //_leetCode_2591();
-        //    //_leetCode_605();
-        //    //_leetCode_697();
-        //    //_leetCode_414();
-        //    //_leetCode_424();
-        //    //_leetCode_938();
-        //    //_leetCode1313();
-        //    //_leetCode2154();
-        //    //_Offer05();
-        //    //_Classics383();
-        //    //_Classics88();
-        //    //_Classics27();
-        //    //_Classics35();
-        //    //_Classics205();
-        //    //_Classics228();
-        //    //_Classics20();
-        //    //_Classics125();
-        //    //_Classics392();
-        //    //_Classics9();
-        //    //_Classics290();
-        //    //_LeetCode1060();
-        //    //_LeetCode754();
-        //    //_LeetCode2535();
-        //    //_Classics80();
-        //    //_LeetCode1796();
-        //    //_Interview_16_15();
-        //    //_LeetCode_283();
-        //    //_LeetCode_11();
-        //    //_LeetCode_2();
-        //    //_Classics45();
-        //    //_LeetCode225();
-        //    _Classics71();
+        static void Main(string[] args)
+        {
+            //_leetCode_2591();
+            //_leetCode_605();
+            //_leetCode_697();
+            //_leetCode_414();
+            //_leetCode_424();
+            //_leetCode_938();
+            //_leetCode1313();
+            //_leetCode2154();
+            //_Offer05();
+            //_Classics383();
+            //_Classics88();
+            //_Classics27();
+            //_Classics35();
+            //_Classics205();
+            //_Classics228();
+            //_Classics20();
+            //_Classics125();
+            //_Classics392();
+            //_Classics9();
+            //_Classics290();
+            //_LeetCode1060();
+            //_LeetCode754();
+            //_LeetCode2535();
+            //_Classics80();
+            //_LeetCode1796();
+            //_Interview_16_15();
+            //_LeetCode_283();
+            //_LeetCode_11();
+            //_LeetCode_2();
+            //_Classics45();
+            //_LeetCode225();
+            //_Classics380();
+            _Classics13();
 
-        //}
+        }
         public static void _leetCode_2591()
         {
             LeetCode_2591 leetCode_2591 = new LeetCode_2591();
@@ -287,6 +288,28 @@ namespace LeetCode
             Classics_71 classics = new Classics_71();
             string str = "/a//b////c/d//././/..";
             string res = classics.SimplifyPath(str);
+        }
+        public static void _Classics380()
+        {
+            Classics_380 randomizedSet = new Classics_380();
+            randomizedSet.Insert(1); // 向集合中插入 1 。返回 true 表示 1 被成功地插入。
+            randomizedSet.Insert(2); // 向集合中插入 2 。返回 true 。集合现在包含 [1,2] 。
+            randomizedSet.Remove(1); // 返回 false ，表示集合中不存在 2 。
+            randomizedSet.GetRandom(); // getRandom 应随机返回 1 或 2 。
+            randomizedSet.Remove(1); // 从集合中移除 1 ，返回 true 。集合现在包含 [2] 。
+            randomizedSet.Insert(2); // 2 已在集合中，所以返回 false 。
+            randomizedSet.GetRandom(); // 由于 2 是集合中唯一的数字，getRandom 总是返回 2 
+        }
+
+        public static void _Classics13()
+        {
+            Classics_13 classics = new Classics_13();
+            classics.RomanToInt("III");
+            classics.RomanToInt("IV");
+            classics.RomanToInt("IX");
+            classics.RomanToInt("LVIII");
+            classics.RomanToInt("MCMXCIV");
+
         }
     }
 }
