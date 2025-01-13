@@ -42,7 +42,10 @@ namespace LeetCode
             //_Classics45();
             //_LeetCode225();
             //_Classics380();
-            _Classics13();
+            //_Classics13();
+            //_Classics28();
+            //_Classics11();
+            _Classics3();
 
         }
         public static void _leetCode_2591()
@@ -55,8 +58,8 @@ namespace LeetCode
         public static void _leetCode_605()
         {
             LeetCode_605 leetCode_605 = new LeetCode_605();
-            int[] fl = new int[] { 1,0, 0, 0,1};
-            bool res= leetCode_605.CanPlaceFlowers(fl,1);
+            int[] fl = new int[] { 1, 0, 0, 0, 1 };
+            bool res = leetCode_605.CanPlaceFlowers(fl, 1);
             System.Console.WriteLine(res);
         }
 
@@ -70,7 +73,7 @@ namespace LeetCode
         public static void _leetCode_414()
         {
             LeetCode_414 leetCode_414 = new LeetCode_414();
-            int[] arr = new int[] { -3,-2,-1,0 };
+            int[] arr = new int[] { -3, -2, -1, 0 };
             int n = leetCode_414.ThirdMax(arr);
             System.Console.WriteLine(n);
         }
@@ -80,7 +83,7 @@ namespace LeetCode
             LeetCode_424 leetCode_424 = new LeetCode_424();
             string s = "AABABBA";
             int k = 2;
-            int n = leetCode_424.CharacterReplacement(s,1);
+            int n = leetCode_424.CharacterReplacement(s, 1);
             System.Console.WriteLine(n);
         }
 
@@ -88,7 +91,7 @@ namespace LeetCode
         {
             LeetCode_938 leetCode_938 = new LeetCode_938();
 
-            TreeNode treeNode = new TreeNode(10,new TreeNode(5,new TreeNode(3,null,null),new TreeNode(7,null,null)),new TreeNode(15,null,new TreeNode(18,null,null)));
+            TreeNode treeNode = new TreeNode(10, new TreeNode(5, new TreeNode(3, null, null), new TreeNode(7, null, null)), new TreeNode(15, null, new TreeNode(18, null, null)));
             leetCode_938.RangeSumBST(treeNode, 7, 16);
         }
 
@@ -104,12 +107,12 @@ namespace LeetCode
             LeetCode_2154 leetCode_2154 = new LeetCode_2154();
 
             int[] arr = new int[] { 5, 3, 6, 1, 12 };
-            leetCode_2154.FindFinalValue(arr,3);
+            leetCode_2154.FindFinalValue(arr, 3);
         }
 
         public static void _Offer05()
         {
-           Offer_05 offer_05 = new Offer_05();
+            Offer_05 offer_05 = new Offer_05();
             string str = "We are happy.";
             offer_05.ReplaceSpace(str);
         }
@@ -126,10 +129,10 @@ namespace LeetCode
         {
             Classisc_88 classics88 = new Classisc_88();
 
-            int[] arr1 = new int[] { 0};
+            int[] arr1 = new int[] { 0 };
             int[] arr2 = new int[] { 1 };
 
-            classics88.Merge(arr1,0,arr2,1);
+            classics88.Merge(arr1, 0, arr2, 1);
         }
         public static void _Classics27()
         {
@@ -137,7 +140,7 @@ namespace LeetCode
 
             int[] arr = new int[] { 3, 2, 2, 3 };
 
-            int num = classics27.RemoveElement(arr,3);
+            int num = classics27.RemoveElement(arr, 3);
         }
         public static void _Classics35()
         {
@@ -145,7 +148,7 @@ namespace LeetCode
 
             int[] arr = new int[] { 1, 3, 5, 6 };
 
-            int res = classics35.SearchInsert(arr,2);
+            int res = classics35.SearchInsert(arr, 2);
         }
 
         public static void _Classics205()
@@ -155,7 +158,7 @@ namespace LeetCode
             string s = "egg";
             string t = "add";
 
-            bool res = classics205.IsIsomorphic(s,t);
+            bool res = classics205.IsIsomorphic(s, t);
         }
         public static void _Classics228()
         {
@@ -196,15 +199,15 @@ namespace LeetCode
             var res = classics290.WordPattern(pattern, s);
         }
 
-    public static void _Classics80()
-    {
-        Classics_80 classics80 = new Classics_80();
+        public static void _Classics80()
+        {
+            Classics_80 classics80 = new Classics_80();
 
-        int[] nums = { 1,2,2 };
-        var res = classics80.RemoveDuplicates(nums);
-    }
+            int[] nums = { 1, 2, 2 };
+            var res = classics80.RemoveDuplicates(nums);
+        }
 
-    public static void _LeetCode1060()
+        public static void _LeetCode1060()
         {
             LeetCode_1160 _leetCode1060 = new LeetCode_1160();
 
@@ -236,7 +239,7 @@ namespace LeetCode
             Interview_16_15 _interview_16_15 = new Interview_16_15();
             string sol = "GRRR";
             string guess = "RBYB";
-            var res = _interview_16_15.MasterMind(sol,guess);
+            var res = _interview_16_15.MasterMind(sol, guess);
         }
         public static void _LeetCode_283()
         {
@@ -248,7 +251,7 @@ namespace LeetCode
         {
             LeetCode_11 leetCode = new LeetCode_11();
             //int[] nums = { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
-            int[] nums = { 1,1 };
+            int[] nums = { 1, 1 };
             leetCode.MaxArea(nums);
         }
         public static void _LeetCode_2()
@@ -260,18 +263,18 @@ namespace LeetCode
                 new LeetCode.ListNode(9,
                 new LeetCode.ListNode(9,
                 new LeetCode.ListNode(9,
-                new LeetCode.ListNode(9,null)))))));
-            LeetCode.ListNode node2 = new LeetCode.ListNode(9, 
-                new LeetCode.ListNode(9, 
-                new LeetCode.ListNode(9, 
-                new LeetCode.ListNode(9,null))));
+                new LeetCode.ListNode(9, null)))))));
+            LeetCode.ListNode node2 = new LeetCode.ListNode(9,
+                new LeetCode.ListNode(9,
+                new LeetCode.ListNode(9,
+                new LeetCode.ListNode(9, null))));
 
-             leetCode.AddTwoNumbers(node1,node2);
+            leetCode.AddTwoNumbers(node1, node2);
         }
         public static void _Classics45()
         {
             Classics_45 classics = new Classics_45();
-            int[] nums = {2,1};
+            int[] nums = { 2, 1 };
             classics.Jump(nums);
         }
         public static void _LeetCode225()
@@ -311,6 +314,20 @@ namespace LeetCode
             classics.RomanToInt("MCMXCIV");
 
         }
+        public static void _Classics28()
+        {
+            Classics_28 classics = new Classics_28();
+            int a = classics.StrStr("sadbutsad", "sad");
+        }
+        public static void _Classics11()
+        {
+            Classics_11 classics = new Classics_11();
+            int a = classics.MaxArea(new[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 });
+        }
+        public static void _Classics3()
+        {
+            Classics_3 classics = new Classics_3();
+            int a = classics.LengthOfLongestSubstring("pwwkew");
+        }
     }
 }
- 
