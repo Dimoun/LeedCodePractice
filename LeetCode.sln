@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.33529.622
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeetCode", "LeetCode\LeetCode.csproj", "{7F90468C-F856-4229-ADB6-BE6B8EF6D982}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiuKe", "NiuKe\NiuKe.csproj", "{A6D9EA44-55BE-484F-A7C3-1621A3DB9438}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NiuKe", "NiuKe\NiuKe.csproj", "{A6D9EA44-55BE-484F-A7C3-1621A3DB9438}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{908F3F69-193D-4E2F-B563-1CBED2ED17DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,12 +27,20 @@ Global
 		{7F90468C-F856-4229-ADB6-BE6B8EF6D982}.Release|x64.Build.0 = Release|x64
 		{A6D9EA44-55BE-484F-A7C3-1621A3DB9438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A6D9EA44-55BE-484F-A7C3-1621A3DB9438}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A6D9EA44-55BE-484F-A7C3-1621A3DB9438}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{A6D9EA44-55BE-484F-A7C3-1621A3DB9438}.Debug|x64.Build.0 = Debug|Any CPU
+		{A6D9EA44-55BE-484F-A7C3-1621A3DB9438}.Debug|x64.ActiveCfg = Debug|x64
+		{A6D9EA44-55BE-484F-A7C3-1621A3DB9438}.Debug|x64.Build.0 = Debug|x64
 		{A6D9EA44-55BE-484F-A7C3-1621A3DB9438}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6D9EA44-55BE-484F-A7C3-1621A3DB9438}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A6D9EA44-55BE-484F-A7C3-1621A3DB9438}.Release|x64.ActiveCfg = Release|Any CPU
 		{A6D9EA44-55BE-484F-A7C3-1621A3DB9438}.Release|x64.Build.0 = Release|Any CPU
+		{908F3F69-193D-4E2F-B563-1CBED2ED17DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{908F3F69-193D-4E2F-B563-1CBED2ED17DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{908F3F69-193D-4E2F-B563-1CBED2ED17DE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{908F3F69-193D-4E2F-B563-1CBED2ED17DE}.Debug|x64.Build.0 = Debug|Any CPU
+		{908F3F69-193D-4E2F-B563-1CBED2ED17DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{908F3F69-193D-4E2F-B563-1CBED2ED17DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{908F3F69-193D-4E2F-B563-1CBED2ED17DE}.Release|x64.ActiveCfg = Release|Any CPU
+		{908F3F69-193D-4E2F-B563-1CBED2ED17DE}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
