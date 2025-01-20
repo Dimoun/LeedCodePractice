@@ -12,5 +12,11 @@ namespace UnitTestProject
             int[] res = classics.PlusOne(new[] { 9,9 });
             
         }
+        [TestMethod]
+        public void Test_Claaics67()
+        {
+            Classics_67 classics = new Classics_67();
+            classics.AddBinary("1010","1011");
+        }
     }
 }
