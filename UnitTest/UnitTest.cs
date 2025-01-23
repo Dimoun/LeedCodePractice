@@ -1,4 +1,5 @@
 using LeetCode.Classisc;
+using LeetCode.LeetCode;
 
 namespace UnitTestProject
 {
@@ -17,6 +18,20 @@ namespace UnitTestProject
         {
             Classics_67 classics = new Classics_67();
             classics.AddBinary("1010","1011");
+        }
+
+        [TestMethod]
+        public void Test_LeetCode1115()
+        {
+            LeetCode_1115 leetcode = new LeetCode_1115(10);
+            Task.Run(() =>
+            {
+                leetcode.Foo();
+            });
+            Task.Run(() =>
+            {
+                leetcode.Bar();
+            });
         }
     }
 }
