@@ -1,3 +1,4 @@
+using LeetCode;
 using LeetCode.Classisc;
 using LeetCode.LeetCode;
 
@@ -65,6 +66,23 @@ namespace UnitTestProject
 
             ListNode node = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(3, new ListNode(4, new ListNode(4, new ListNode(5, null)))))));
             classics.DeleteDuplicates(node);
+        }
+        [TestMethod]
+        public void Test_Classics_61()
+        {
+            Classics_61 classics = new Classics_61();
+
+            ListNode node = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, null)))));
+            classics.RotateRight(node, 2);
+        }
+        [TestMethod]
+        public void Test_Classics_114()
+        {
+            Classics_114 classics = new Classics_114();
+
+            TreeNode treeNode = new TreeNode(1, new TreeNode(2, new TreeNode(3), new TreeNode(4)),
+                new TreeNode(5, null, new TreeNode(6)));
+            classics.Flatten(treeNode);
         }
     }
 }
