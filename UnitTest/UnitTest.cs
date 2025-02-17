@@ -84,5 +84,10 @@ namespace UnitTestProject
                 new TreeNode(5, null, new TreeNode(6)));
             classics.Flatten(treeNode);
         }
+        [TestMethod]
+        public void Test_Classics_128(){
+            Classics_128 classics = new Classics_128();
+            classics.LongestConsecutive(new int[]{0, 3, 7, 2, 5, 8, 4, 6, 0, 1});
+        }
     }
 }
