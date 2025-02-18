@@ -15,7 +15,7 @@ namespace UnitTestProject
             
         }
         [TestMethod]
-        public void Test_Claaics67()
+        public void Test_Classiccs67()
         {
             Classics_67 classics = new Classics_67();
             classics.AddBinary("1010","1011");
@@ -85,26 +85,32 @@ namespace UnitTestProject
             classics.Flatten(treeNode);
         }
         [TestMethod]
-        public void Test_Classics_128(){
-            Classics_128 classics = new Classics_128();
-            classics.LongestConsecutive(new int[]{0, 3, 7, 2, 5, 8, 4, 6, 0, 1});
-        }
-        [TestMethod]
-        public void Test_Classics_49(){
-            Classics_49 classics = new Classics_49();
-            //classics.GroupAnagrams(new string[] { "eat", "tea", "tan", "ate", "nat", "bat" });
-            //classics.GroupAnagrams(new string[] { "", "" });
-            //classics.GroupAnagrams(new string[] { "c", "c" });
-            classics.Method(new string[] { "hhhhu", "tttti", "tttit", "hhhuh", "hhuhh", "tittt" });
+        public void Test_Classics_222()
+        {
+            Classics_222 classics = new Classics_222();
+
+            TreeNode treeNode = new TreeNode(1, new TreeNode(2, new TreeNode(3)));
+            classics.CountNodes(treeNode);
         }
 
         [TestMethod]
         public void Test_LeetCode_257()
         {
-            LeetCode_257 leetCode = new LeetCode_257();
+            LeetCode_257 leetcode = new LeetCode_257();
+
+            // TreeNode treeNode = new TreeNode(1, new TreeNode(2, new TreeNode(4), new TreeNode(5)),
+            //     new TreeNode(3, new TreeNode(6), new TreeNode(7)));
+            
             TreeNode treeNode = new TreeNode(1, new TreeNode(2, null, new TreeNode(5)),
-                new TreeNode(3));
-            leetCode.BinaryTreePaths(treeNode);
+                new TreeNode(3, null, null));
+            leetcode.BinaryTreePaths(treeNode);
+        }
+        [TestMethod]
+        public void Test_LeetCode_77()
+        {
+            LeetCode_77 leetcode = new LeetCode_77();
+
+            leetcode.Combine(4,2);
         }
     }
 }
