@@ -89,5 +89,22 @@ namespace UnitTestProject
             Classics_128 classics = new Classics_128();
             classics.LongestConsecutive(new int[]{0, 3, 7, 2, 5, 8, 4, 6, 0, 1});
         }
+        [TestMethod]
+        public void Test_Classics_49(){
+            Classics_49 classics = new Classics_49();
+            //classics.GroupAnagrams(new string[] { "eat", "tea", "tan", "ate", "nat", "bat" });
+            //classics.GroupAnagrams(new string[] { "", "" });
+            //classics.GroupAnagrams(new string[] { "c", "c" });
+            classics.Method(new string[] { "hhhhu", "tttti", "tttit", "hhhuh", "hhuhh", "tittt" });
+        }
+
+        [TestMethod]
+        public void Test_LeetCode_257()
+        {
+            LeetCode_257 leetCode = new LeetCode_257();
+            TreeNode treeNode = new TreeNode(1, new TreeNode(2, null, new TreeNode(5)),
+                new TreeNode(3));
+            leetCode.BinaryTreePaths(treeNode);
+        }
     }
 }
