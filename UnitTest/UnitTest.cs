@@ -112,5 +112,19 @@ namespace UnitTestProject
 
             leetcode.Combine(4,2);
         }
+        [TestMethod]
+        public void Test_LeetCode_216()
+        {
+            LeetCode_216 leetcode = new LeetCode_216();
+
+            leetcode.CombinationSum3(3, 7);
+        }
+        [TestMethod]
+        public void Test_LeetCode_17()
+        {
+            LeetCode_17 leetcode = new LeetCode_17();
+
+            leetcode.LetterCombinations("3");
+        }
     }
 }
