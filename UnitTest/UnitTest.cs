@@ -126,5 +126,16 @@ namespace UnitTestProject
 
             leetcode.LetterCombinations("3");
         }
+        [TestMethod]
+        public void Test_LeetCode_39()
+        {
+            //LeetCode_39 leetcode = new LeetCode_39();
+
+            //leetcode.CombinationSum(new int[]{2,3,6,7},7);
+
+            LeetCode_40 leetcode = new LeetCode_40();
+
+            leetcode.CombinationSum2(new int[] { 10, 1, 2, 7, 6, 1, 5 }, 8);
+        }
     }
 }
