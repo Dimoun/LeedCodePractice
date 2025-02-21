@@ -133,9 +133,10 @@ namespace UnitTestProject
 
             //leetcode.CombinationSum(new int[]{2,3,6,7},7);
 
-            LeetCode_40 leetcode = new LeetCode_40();
+            //LeetCode_40 leetcode = new LeetCode_40();
+            LeetCode_93 leetcode = new LeetCode_93();
 
-            leetcode.CombinationSum2(new int[] { 10, 1, 2, 7, 6, 1, 5 }, 8);
+            leetcode.RestoreIpAddresses("101023");
         }
     }
 }
