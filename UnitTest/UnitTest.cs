@@ -1,6 +1,7 @@
 using LeetCode;
 using LeetCode.Classisc;
 using LeetCode.LeetCode;
+using LeetCode.Greedy;
 
 namespace UnitTestProject
 {
@@ -137,6 +138,22 @@ namespace UnitTestProject
             LeetCode_93 leetcode = new LeetCode_93();
 
             leetcode.RestoreIpAddresses("101023");
+        }
+
+        [TestMethod]
+        public void Test_LeetCode_Greedy()
+        {
+            //LeetCode_376 leetcode = new LeetCode_376();
+
+            //leetcode.WiggleMaxLength(new int[]{ 1, 17, 5, 10, 13, 15, 10, 5, 16, 8 });
+
+            //LeetCode_53 leetcode = new LeetCode_53();
+
+            //leetcode.MaxSubArray(new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 });
+
+            Greedy greedy = new Greedy();
+            //greedy.LeetCode_122_MaxProfit(new int[] { 7, 1, 5, 3, 6, 4 });
+            greedy.LeetCode_45_Jump(new int[]{ 2, 3, 1, 1, 4 });
         }
     }
 }
