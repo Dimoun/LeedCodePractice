@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode.LeetCode
+namespace LeetCode.LeetCode.BackTrack
 {
     public class LeetCode_40
     {
@@ -32,10 +32,10 @@ namespace LeetCode.LeetCode
                 {
                     continue;
                 }
-                
+
                 path.Add(candidates[i]);
                 sum += candidates[i];
-                BackTracking(i+1, sum, candidates, target);
+                BackTracking(i + 1, sum, candidates, target);
                 path.Remove(candidates[i]);
                 sum -= candidates[i];
             }

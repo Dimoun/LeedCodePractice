@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode.LeetCode
+namespace LeetCode.LeetCode.BackTrack
 {
     public class LeetCode_17
     {
@@ -19,16 +19,16 @@ namespace LeetCode.LeetCode
             int index = 0;
             for (int i = 0; i < len; i++)
             {
-                string str = digits[i] switch 
+                string str = digits[i] switch
                 {
-                     '2' => "abc",
-                     '3' => "def",
-                     '4' => "ghi",
-                     '5' => "jkl",
-                     '6' => "mno",
-                     '7' => "pqrs",
-                     '8' => "tuv",
-                     '9' => "wxyz",
+                    '2' => "abc",
+                    '3' => "def",
+                    '4' => "ghi",
+                    '5' => "jkl",
+                    '6' => "mno",
+                    '7' => "pqrs",
+                    '8' => "tuv",
+                    '9' => "wxyz",
                 };
                 if (!string.IsNullOrEmpty(str))
                 {
@@ -40,7 +40,7 @@ namespace LeetCode.LeetCode
             return res;
         }
 
-        public void BackTracking(int len,int startIndex, string sb,IList<string> list,IList<string> res)
+        public void BackTracking(int len, int startIndex, string sb, IList<string> list, IList<string> res)
         {
             if (sb.Length == len)
             {
@@ -53,8 +53,8 @@ namespace LeetCode.LeetCode
                 for (int j = 0; j < list[i].Length; j++)
                 {
                     sb += list[i][j];
-                    BackTracking(len,i+1,sb,list,res);
-                    sb = sb.Substring(0,sb.Length-1);
+                    BackTracking(len, i + 1, sb, list, res);
+                    sb = sb.Substring(0, sb.Length - 1);
                 }
             }
         }

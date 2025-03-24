@@ -1,7 +1,6 @@
 using LeetCode;
 using LeetCode.Classisc;
 using LeetCode.LeetCode;
-using LeetCode.Greedy;
 
 namespace UnitTestProject
 {
@@ -12,14 +11,14 @@ namespace UnitTestProject
         public void Test_Claaics100()
         {
             Classics_66 classics = new Classics_66();
-            int[] res = classics.PlusOne(new[] { 9,9 });
-            
+            int[] res = classics.PlusOne(new[] { 9, 9 });
+
         }
         [TestMethod]
         public void Test_Classiccs67()
         {
             Classics_67 classics = new Classics_67();
-            classics.AddBinary("1010","1011");
+            classics.AddBinary("1010", "1011");
         }
 
         [TestMethod]
@@ -101,7 +100,7 @@ namespace UnitTestProject
 
             // TreeNode treeNode = new TreeNode(1, new TreeNode(2, new TreeNode(4), new TreeNode(5)),
             //     new TreeNode(3, new TreeNode(6), new TreeNode(7)));
-            
+
             TreeNode treeNode = new TreeNode(1, new TreeNode(2, null, new TreeNode(5)),
                 new TreeNode(3, null, null));
             leetcode.BinaryTreePaths(treeNode);
@@ -111,7 +110,7 @@ namespace UnitTestProject
         {
             LeetCode_77 leetcode = new LeetCode_77();
 
-            leetcode.Combine(4,2);
+            leetcode.Combine(4, 2);
         }
         [TestMethod]
         public void Test_LeetCode_216()
@@ -121,23 +120,35 @@ namespace UnitTestProject
             leetcode.CombinationSum3(3, 7);
         }
         [TestMethod]
-        public void Test_LeetCode_17()
-        {
-            LeetCode_17 leetcode = new LeetCode_17();
-
-            leetcode.LetterCombinations("3");
-        }
-        [TestMethod]
-        public void Test_LeetCode_39()
+        public void Test_LeetCode_BackTrack()
         {
             //LeetCode_39 leetcode = new LeetCode_39();
 
             //leetcode.CombinationSum(new int[]{2,3,6,7},7);
 
             //LeetCode_40 leetcode = new LeetCode_40();
-            LeetCode_93 leetcode = new LeetCode_93();
+            //LeetCode_93 leetcode = new LeetCode_93();
+            //LeetCode_78 leetcode = new LeetCode_78();
+            //LeetCode_90 leetcode = new LeetCode_90();
+            //LeetCode_491 leetcode = new LeetCode_491();
+            //LeetCode_46 leetcode = new LeetCode_46();
+            //LeetCode_47 leetcode = new LeetCode_47();
+            LeetCode_51 leetcode = new LeetCode_51();
 
-            leetcode.RestoreIpAddresses("101023");
+            leetcode.SolveNQueens(4);
+        }
+        [TestMethod]
+        public void Test_LeetCode_131()
+        {
+            LeetCode_131 leetcode = new LeetCode_131();
+
+            leetcode.Partition("aab");
+        }
+        [TestMethod]
+        public void Test_LeetCode_Greed()
+        {
+            LeetCode_455 leetcode = new LeetCode_455();
+            leetcode.FindContentChildren(new[] { 1, 2}, new[] { 1, 2,3 });
         }
 
         [TestMethod]

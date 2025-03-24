@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode.LeetCode
+namespace LeetCode.LeetCode.BackTrack
 {
     public class LeetCode_216
     {
@@ -14,12 +14,12 @@ namespace LeetCode.LeetCode
             IList<IList<int>> res = new List<IList<int>>();
             IList<int> path = new List<int>();
 
-            BackTracking(1, 0,k, n, path, res);
-            
+            BackTracking(1, 0, k, n, path, res);
+
             return res;
         }
 
-        public void BackTracking(int startIndex, int sum,int k,int n, IList<int> path, IList<IList<int>> res)
+        public void BackTracking(int startIndex, int sum, int k, int n, IList<int> path, IList<IList<int>> res)
         {
             int count = path.Count;
             if (count == k)
@@ -31,7 +31,7 @@ namespace LeetCode.LeetCode
                 return;
             }
 
-            for (int i = startIndex; i <= 9-(k - count) +1; i++)
+            for (int i = startIndex; i <= 9 - (k - count) + 1; i++)
             {
                 path.Add(i);
                 sum += i;
@@ -41,7 +41,7 @@ namespace LeetCode.LeetCode
                     path.Remove(i);
                     return;
                 }
-                BackTracking(i+1,sum, k, n, path, res);
+                BackTracking(i + 1, sum, k, n, path, res);
                 sum -= i;
                 path.Remove(i);
             }
