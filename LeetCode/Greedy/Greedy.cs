@@ -55,5 +55,80 @@ namespace LeetCode.Greedy
 
             return step;
         }
+        public int LeetCode_1005_LargestSumAfterKNegations(int[] nums, int k)
+        {
+            Array.Sort(nums, (a, b) => Math.Abs(a) - Math.Abs(b));
+            int len = nums.Length;
+            int count = 0;
+            for (int i = len-1; i >= 0 ; i--)
+            {
+                if (nums[i] < 0 && k > 0)
+                {
+                    nums[i] = -nums[i];
+                    k--;
+                }
+            }
+
+            if (k % 2 == 1)
+            {
+                nums[0] = -nums[0];
+            }
+
+            foreach (var value in nums)
+            {
+                count += value;
+            }
+            return count;
+        }
+        public int LeetCode_134_CanCompleteCircuit(int[] gas, int[] cost)
+        {
+            int curSum = 0, totalSum = 0, index = 0;
+            for (int i = 0; i < gas.Length; i++)
+            {
+                curSum += gas[i] - cost[i];
+                totalSum += gas[i] - cost[i];
+                if (curSum < 0)
+                {
+                    index = i + 1;
+                    curSum = 0;
+                }
+            }
+
+            if (totalSum < 0)
+                return -1;
+            return index;
+        }
+        public bool LeetCode_860_LemonadeChange(int[] bills)
+        {
+            int five = 0, ten = 0;
+            foreach (var item in bills)
+            {
+                switch (item)
+                {
+                    case 5: five++;
+                        break;
+                    case 10:
+                        if (five <= 0)
+                            return false;
+                        ten++;
+                        five--;
+                        break;
+                    case 20:
+                        if (five > 0 && ten > 0)
+                        {
+                            five--;
+                            ten--;
+                        }else if (five >= 3)
+                        {
+                            five -= 3;
+                        }
+                        else return false;
+
+                        break;
+                }
+            }
+
+            return true;
+        }
     }
 }

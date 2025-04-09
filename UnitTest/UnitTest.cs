@@ -164,7 +164,11 @@ namespace UnitTestProject
 
             Greedy greedy = new Greedy();
             //greedy.LeetCode_122_MaxProfit(new int[] { 7, 1, 5, 3, 6, 4 });
-            greedy.LeetCode_45_Jump(new int[]{ 2, 3, 1, 1, 4 });
+            //greedy.LeetCode_45_Jump(new int[]{ 2, 3, 1, 1, 4 });
+            //greedy.LeetCode_1005_LargestSumAfterKNegations(new int[] { 4, 2, 3 }, 1);
+            //greedy.LeetCode_134_CanCompleteCircuit(new int[] { 1, 2, 3, 4, 5 }, new int[]{ 3, 4, 5, 1, 2 });
+            //greedy.LeetCode_860_LemonadeChange(new int[] { 5, 5, 5, 5, 20, 20, 5, 5, 20, 5 });
+            greedy.LeetCode_860_LemonadeChange(new int[] { 5, 5, 5, 10, 20 });
         }
     }
 }
