@@ -1,6 +1,9 @@
 using LeetCode;
 using LeetCode.Classisc;
+using LeetCode.Greedy;
 using LeetCode.LeetCode;
+using LeetCode.LeetCode.BackTrack;
+using LeetCode.LeetCode.Greed;
 
 namespace UnitTestProject
 {
@@ -144,12 +147,6 @@ namespace UnitTestProject
 
             leetcode.Partition("aab");
         }
-        [TestMethod]
-        public void Test_LeetCode_Greed()
-        {
-            LeetCode_455 leetcode = new LeetCode_455();
-            leetcode.FindContentChildren(new[] { 1, 2}, new[] { 1, 2,3 });
-        }
 
         [TestMethod]
         public void Test_LeetCode_Greedy()
@@ -168,7 +165,42 @@ namespace UnitTestProject
             //greedy.LeetCode_1005_LargestSumAfterKNegations(new int[] { 4, 2, 3 }, 1);
             //greedy.LeetCode_134_CanCompleteCircuit(new int[] { 1, 2, 3, 4, 5 }, new int[]{ 3, 4, 5, 1, 2 });
             //greedy.LeetCode_860_LemonadeChange(new int[] { 5, 5, 5, 5, 20, 20, 5, 5, 20, 5 });
-            greedy.LeetCode_860_LemonadeChange(new int[] { 5, 5, 5, 10, 20 });
+            //greedy.LeetCode_860_LemonadeChange(new int[] { 5, 5, 5, 10, 20 });
+            //greedy.LeetCode_406_ReconstructQueue(new int[][]
+            //{
+            //    new int[]{ 7, 0 },
+            //    new int[]{ 4, 4 },
+            //    new int[]{ 7, 1 },
+            //    new int[]{ 5, 0 },
+            //    new int[]{ 6, 1 },
+            //    new int[]{ 5, 2 },
+
+            //});
+            //greedy.LeetCode_452_FindMinArrowShots(new int[][]
+            //{
+            //    new int[]{ -2147483646, -2147483645 },
+            //    new int[]{ 2147483646, 2147483647 },
+            //    //new int[]{ 5, 6 },
+            //    //new int[]{ 7, 8 },
+
+            //});
+            //greedy.LeetCode_435_EraseOverlapIntervals(new int[][]
+            //{
+            //    new int[]{ 0, 2 },
+            //    new int[]{ 1,3 },
+            //    new int[]{ 2, 4 },
+            //    new int[]{ 3, 5 },
+            //    new int[]{ 4, 6 },
+
+            //});
+            //greedy.LeetCode_763_PartitionLabels("ababcbacadefegdehijhklij");
+            //greedy.LeetCode_738_MonotoneIncreasingDigits(332);
+            greedy.LeetCode_968_MinCameraCover(new TreeNode(0,
+                new TreeNode(0, 
+                    new TreeNode(0, 
+                        new TreeNode(0, null, new 
+                            TreeNode(0, null, null)), null), null),
+                null));
         }
     }
 }
