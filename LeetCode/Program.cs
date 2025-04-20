@@ -1,9 +1,9 @@
 ﻿using LeetCode.Classisc;
 using LeetCode.InterviewQ;
-using LeetCode.LeetCode;
-using LeetCode.哈希表;
 using System;
 using LeetCode.Greedy;
+using LeetCode.Hash;
+using LeetCode.Others;
 
 namespace LeetCode
 {
@@ -258,17 +258,17 @@ namespace LeetCode
         public static void _LeetCode_2()
         {
             LeetCode_2 leetCode = new LeetCode_2();
-            LeetCode.ListNode node1 = new LeetCode.ListNode(9,
-                new LeetCode.ListNode(9,
-                new LeetCode.ListNode(9,
-                new LeetCode.ListNode(9,
-                new LeetCode.ListNode(9,
-                new LeetCode.ListNode(9,
-                new LeetCode.ListNode(9, null)))))));
-            LeetCode.ListNode node2 = new LeetCode.ListNode(9,
-                new LeetCode.ListNode(9,
-                new LeetCode.ListNode(9,
-                new LeetCode.ListNode(9, null))));
+            ListNode node1 = new ListNode(9,
+                new ListNode(9,
+                new ListNode(9,
+                new ListNode(9,
+                new ListNode(9,
+                new ListNode(9,
+                new ListNode(9, null)))))));
+            ListNode node2 = new ListNode(9,
+                new ListNode(9,
+                new ListNode(9,
+                new ListNode(9, null))));
 
             leetCode.AddTwoNumbers(node1, node2);
         }

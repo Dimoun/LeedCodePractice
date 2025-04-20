@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode.LeetCode.BackTrack
+namespace LeetCode.BackTrack
 {
     public class LeetCode_90
     {

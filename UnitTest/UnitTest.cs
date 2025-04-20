@@ -1,9 +1,8 @@
-using LeetCode;
 using LeetCode.Classisc;
+using LeetCode.BackTrack;
 using LeetCode.Greedy;
-using LeetCode.LeetCode;
-using LeetCode.LeetCode.BackTrack;
-using LeetCode.LeetCode.Greed;
+using LeetCode.LeetCode.DP;
+using LeetCode.Others;
 
 namespace UnitTestProject
 {
@@ -201,6 +200,13 @@ namespace UnitTestProject
                         new TreeNode(0, null, new 
                             TreeNode(0, null, null)), null), null),
                 null));
+        }
+
+        [TestMethod]
+        public void Test_LeetCode_DP()
+        {
+            DP dp = new DP();
+            dp.LeetCode_70_ClimbStairs(3);
         }
     }
 }

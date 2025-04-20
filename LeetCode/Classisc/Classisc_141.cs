@@ -1,4 +1,4 @@
-﻿using LeetCode.LeetCode;
+﻿using LeetCode.Others;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace LeetCode.Classisc
 {
-   
- //Definition for singly-linked list.
+
+    //Definition for singly-linked list.
     // public class ListNode
     //{
     //     public int val;
