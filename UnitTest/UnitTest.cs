@@ -206,7 +206,15 @@ namespace UnitTestProject
         public void Test_LeetCode_DP()
         {
             DP dp = new DP();
-            dp.LeetCode_70_ClimbStairs(3);
+            //dp.LeetCode_70_ClimbStairs(3);
+            //dp.LeetCode_63_UniquePathsWithObstacles(new int[][]
+            //{
+            //    new int[]{0,0},
+            //    //new int[] { 0, 0, 0 },
+            //    //new int[] { 0, 1, 0 },
+            //    //new int[] { 0, 0, 0 },
+            //});
+            dp.LeetCode_343_IntegerBreak(10);
         }
     }
 }

@@ -85,8 +85,42 @@ namespace LeetCode.LeetCode.DP
         }
         public int LeetCode_63_UniquePathsWithObstacles(int[][] obstacleGrid)
         {
+            int row = obstacleGrid.Length;
+            int column = obstacleGrid[0].Length;
+            int[,] dp = new int[row,column];
+            for (int i = 0; i < column && obstacleGrid[0][i] == 0; i++)
+            {
+                dp[0, i] = 1;
+            }
+            for (int i = 0; i < row && obstacleGrid[i][0] == 0; i++)
+            {
+                dp[i, 0] = 1;
+            }
+            for (int i = 1; i < row; i++)
+            {
+                for (int j = 1; j < column ; j++)
+                {
+                    if (obstacleGrid[i][j] == 1)
+                        continue;
+                    dp[i, j] = dp[i - 1, j] + dp[i, j - 1];
+                }
+            }
 
+            return dp[row - 1, column - 1];
         }
-
+        public int LeetCode_343_IntegerBreak(int n)
+        {
+            int[] dp = new int[n];
+            dp[0] = 0;
+            dp[1] = 1;
+            for (int i = 2; i < n; i++)
+            {
+                for (int j = 0; j <= i/2; j++)
+                {
+                    dp[i] = Math.Max(dp[i], Math.Max(j * (i - j), j * dp[i - j]));
+                }
+            }
+            return dp[n-1];
+        }
     }
 }
