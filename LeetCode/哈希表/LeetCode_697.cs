@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode.Hash
+namespace LeetCode.哈希表
 {
     public class LeetCode_697
     {
@@ -16,7 +16,7 @@ namespace LeetCode.Hash
 
             Dictionary<int, int[]> dictionary = new Dictionary<int, int[]>();
 
-            for (int i = 0; i < nums.Length; i++)
+            for(int i=0; i< nums.Length; i++)
             {
                 if (dictionary.ContainsKey(nums[i]))
                 {
@@ -28,26 +28,24 @@ namespace LeetCode.Hash
                     dictionary.Add(nums[i], new int[3] { 1, i, i });
                 }
             }
-            int minLength = 0;
+            int minLength = 0; 
             int maxNumber = 0;
-            foreach (var pair in dictionary)
+            foreach(var pair in dictionary)
             {
                 if (pair.Value[0] > maxNumber)
                 {
                     maxNumber = pair.Value[0];
                     minLength = pair.Value[2] - pair.Value[1];
-                }
-                else if (pair.Value[0] == maxNumber)
+                }else if (pair.Value[0] == maxNumber)
                 {
-                    if (minLength > pair.Value[2] - pair.Value[1])
-                    {
+                    if(minLength > (pair.Value[2] - pair.Value[1])){
                         minLength = pair.Value[2] - pair.Value[1];
                     }
                 }
             }
 
 
-            return minLength + 1;
+            return minLength+1;
         }
     }
 }

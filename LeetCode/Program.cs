@@ -1,9 +1,9 @@
 ﻿using LeetCode.Classisc;
 using LeetCode.InterviewQ;
 using System;
-using LeetCode.Greedy;
-using LeetCode.Hash;
+using LeetCode.LeetCode.Greedy;
 using LeetCode.Others;
+using LeetCode.LeetCode.HashTable;
 
 namespace LeetCode
 {
