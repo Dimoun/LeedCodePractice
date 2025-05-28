@@ -214,7 +214,8 @@ namespace UnitTestProject
             //    //new int[] { 0, 1, 0 },
             //    //new int[] { 0, 0, 0 },
             //});
-            dp.LeetCode_343_IntegerBreak(10);
+            //dp.LeetCode_343_IntegerBreak(10);
+            dp.LeetCode_96_NumTrees(3);
         }
     }
 }

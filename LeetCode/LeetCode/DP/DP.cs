@@ -110,17 +110,32 @@ namespace LeetCode.LeetCode.DP
         }
         public int LeetCode_343_IntegerBreak(int n)
         {
-            int[] dp = new int[n];
+            int[] dp = new int[n+1];
             dp[0] = 0;
-            dp[1] = 1;
-            for (int i = 2; i < n; i++)
+            dp[1] = 0;
+            dp[2] = 1;
+            for (int i = 3; i <= n; i++)
             {
-                for (int j = 0; j <= i/2; j++)
+                for (int j = 1; j <= i/2; j++)
                 {
                     dp[i] = Math.Max(dp[i], Math.Max(j * (i - j), j * dp[i - j]));
                 }
             }
-            return dp[n-1];
+            return dp[n];
+        }
+        public int LeetCode_96_NumTrees(int n)
+        {
+            int[] dp = new int[n + 1];
+            dp[0] = 1;
+            for (int i = 1; i <= n; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    dp[i] += dp[j - 1] * dp[i - j];
+                }
+            }
+
+            return dp[n];
         }
     }
 }
