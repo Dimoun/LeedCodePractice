@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using LeetCode.Others;
 
-namespace LeetCode.Greedy
+namespace LeetCode.LeetCode.Greedy
 {
     public class Greedy
     {

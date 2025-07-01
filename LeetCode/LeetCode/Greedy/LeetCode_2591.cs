@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode.Greedy
+namespace LeetCode.LeetCode.Greedy
 {
     public class LeetCode_2591
     {

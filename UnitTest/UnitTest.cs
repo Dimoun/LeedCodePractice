@@ -200,6 +200,22 @@ namespace UnitTestProject
                         new TreeNode(0, null, new 
                             TreeNode(0, null, null)), null), null),
                 null));
+
+            //greedy.LeetCode_56_Merge(new int[][]
+            //{
+            //    new int[] { 1, 3 },
+            //    new int[] { 2, 6 },
+            //    new int[] { 8, 10 },
+            //    new int[]{15,18}
+            //});
+       }
+
+        [TestMethod]
+        public void Test_LeetCode_BinaryTree()
+        {
+            BinaryTree tree = new BinaryTree();
+            TreeNode node = new TreeNode(1, null, new TreeNode(2, new TreeNode(3, null), null));
+            tree.LeetCode_107_LevelOrderBottom(node);
         }
 
         [TestMethod]
