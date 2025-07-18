@@ -4,6 +4,7 @@ using System;
 using LeetCode.LeetCode.Greedy;
 using LeetCode.Others;
 using LeetCode.LeetCode.HashTable;
+using LeetCode.LeetCode.LinkedTable;
 
 namespace LeetCode
 {
