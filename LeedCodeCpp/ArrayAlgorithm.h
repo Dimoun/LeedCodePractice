@@ -5,6 +5,7 @@
 class ArrayAlgorithm
 {
 public:
-    int search(vector<int>& nums, int target);
+    int LeetCode704_search(vector<int>& nums, int target);
+    int Leetcode27_removeElement(vector<int>& nums, int val);
 };
 
