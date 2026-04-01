@@ -1,4 +1,5 @@
 #include "ArrayAlgorithm.h"
+#include <algorithm>
 
 int ArrayAlgorithm::LeetCode704_search(vector<int>& nums, int target) {
 
@@ -37,4 +38,18 @@ int ArrayAlgorithm::Leetcode27_removeElement(vector<int>& nums, int val) {
 	}
 	return left;
 
+}
+
+vector<int> ArrayAlgorithm::LeetCode_977_sortedSquares(vector<int>& nums) {
+
+	vector<int> result;
+	for (int num : nums)
+	{
+		result.push_back(num * num);
+	}
+	sort(result.begin(), result.end());
+
+
+
+	return result;
 }
