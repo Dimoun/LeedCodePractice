@@ -42,14 +42,34 @@ int ArrayAlgorithm::Leetcode27_removeElement(vector<int>& nums, int val) {
 
 vector<int> ArrayAlgorithm::LeetCode_977_sortedSquares(vector<int>& nums) {
 
-	vector<int> result;
-	for (int num : nums)
-	{
-		result.push_back(num * num);
+	//Method 1: 直接平方后排序
+	//vector<int> result;
+	//for (int num : nums)
+	//{
+	//	result.push_back(num * num);
+	//}
+	//sort(result.begin(), result.end());
+
+	//Method 2: 双指针
+	int len = nums.size();
+	int left = 0;
+	int right = len - 1;
+	int pos = len - 1;
+	vector<int> result(len);
+
+	while (left <= right) {
+
+		int leftSquare = nums[left] * nums[left];
+		int rightSquare = nums[right] * nums[right];
+
+		if (leftSquare > rightSquare) {
+			result[pos--] = leftSquare;
+			left++;
+		}else {
+			result[pos--] = rightSquare;
+			right--;
+		}
 	}
-	sort(result.begin(), result.end());
-
-
 
 	return result;
 }
