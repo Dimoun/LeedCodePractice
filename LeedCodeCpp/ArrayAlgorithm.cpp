@@ -94,3 +94,43 @@ int ArrayAlgorithm::Leetcode209_minSubArrayLen(int target, vector<int>& nums) {
 	
 	return minLength == INT_MAX? 0 : minLength;
 }
+
+vector<vector<int>> ArrayAlgorithm::Leetcode59_generateMatrix(int n)
+{
+	
+	return vector<vector<int>>(n, vector<int>(n, 0));
+}
+
+vector<int> ArrayAlgorithm::Leetcode54_spiralOrder(vector<vector<int>>& matrix)
+{
+	vector<int> res;
+	int rows = matrix.size();
+	int columns = matrix[0].size();
+	int top = 0, bottom = matrix.size() - 1, left = 0, right = matrix[0].size() - 1;
+
+	while (res.size() < rows*columns) {
+		
+		for (int i = left; i <= right && res.size() < rows * columns; i++) {
+
+			res.push_back(matrix[top][i]);
+		}
+		top++;
+		for (int i = top; i <=bottom && res.size() < rows * columns; i++)
+		{
+			res.push_back(matrix[i][right]);
+		}
+		right--;
+		for (int i = right; i >= left && res.size() < rows * columns; i--)
+		{
+			res.push_back(matrix[bottom][i]);
+		}
+		bottom--;
+		for (int i = bottom; i >= top && res.size() < rows * columns; i--)
+		{
+			res.push_back(matrix[i][left]);
+		}
+		left++;
+	}
+
+	return res;
+}

@@ -24,8 +24,11 @@ namespace CppUnit
 			//vector<int> vec = { -4,-1,0,3,10 };
 			//auto res = arrayAlgorithm.LeetCode_977_sortedSquares(vec);
 
-			vector<int> vec = { 2,3,1,2,4,3 };
-			auto res = arrayAlgorithm.Leetcode209_minSubArrayLen(7,vec);
+			//vector<int> vec = { 2,3,1,2,4,3 };
+			//auto res = arrayAlgorithm.Leetcode209_minSubArrayLen(7,vec);
+
+			vector<vector<int>> vec = { {1,2,3,4},{5,6,7,8},{9,10,11,12} };
+			auto res = arrayAlgorithm.Leetcode54_spiralOrder(vec);
 		}
 	};
 }
