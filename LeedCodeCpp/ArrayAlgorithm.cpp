@@ -73,3 +73,24 @@ vector<int> ArrayAlgorithm::LeetCode_977_sortedSquares(vector<int>& nums) {
 
 	return result;
 }
+
+int ArrayAlgorithm::Leetcode209_minSubArrayLen(int target, vector<int>& nums) {
+	
+	// »¬¶¯´°¿Ú
+	int left = 0, right = 0;
+	int minLength = INT_MAX;
+	int sum = 0;
+	int len = nums.size();
+	while (right < len) {
+		
+		sum += nums[right];
+		while(sum >= target) {
+			minLength = min(minLength, right - left + 1);
+			sum -= nums[left];
+			left++;
+		}
+		right++;
+	}
+	
+	return minLength == INT_MAX? 0 : minLength;
+}
