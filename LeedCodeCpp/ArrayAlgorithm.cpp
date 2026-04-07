@@ -97,8 +97,33 @@ int ArrayAlgorithm::Leetcode209_minSubArrayLen(int target, vector<int>& nums) {
 
 vector<vector<int>> ArrayAlgorithm::Leetcode59_generateMatrix(int n)
 {
+	vector<vector<int>> res(n,vector<int>(n,0));
+	int top = 0, bottom = n - 1, left = 0, right = n - 1;
+	int num = 1;
+	while(num <= n*n) {
+		
+		for (int i = left;i <= right;i++) {
+			res[top][i] = num++;
+		}
+		top++;
+		for (int i = top; i <= bottom; i++)
+		{
+			res[i][right] = num++;
+		}
+		right--;
+		for (int i = right; i >= left; i--)
+		{
+			res[bottom][i] = num++;
+		}
+		bottom--;
+		for (int i = bottom; i >= top; i--)
+		{
+			res[i][left] = num++;
+		}
+		left++;
+	}
 	
-	return vector<vector<int>>(n, vector<int>(n, 0));
+	return res;
 }
 
 vector<int> ArrayAlgorithm::Leetcode54_spiralOrder(vector<vector<int>>& matrix)
