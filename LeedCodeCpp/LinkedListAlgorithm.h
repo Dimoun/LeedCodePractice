@@ -11,5 +11,8 @@ class LinkedListAlgorithm
 {
 public:
 	ListNode* leetcode203_removeElements(ListNode* head, int val);
+
+	ListNode* leetcode206_reverseList(ListNode* head);
+	ListNode* leetcode24_swapPairs(ListNode* head);
 };
 

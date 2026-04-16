@@ -46,11 +46,20 @@
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="*.cpp" />
+    <ClCompile Include="ArrayAlgorithm.cpp" />
+    <ClCompile Include="HashTableAlgorithm.cpp" />
+    <ClCompile Include="LinkedListAlgorithm.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="*.h" />
+    <ClCompile Include="ArrayAlgorithm.h" />
+    <ClInclude Include="HashTableAlgorithm.h" />
+    <ClInclude Include="LinkedListAlgorithm.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Targets" />
 </Project>
