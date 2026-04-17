@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTe
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppUnit", "CppUnit\CppUnit.vcxproj", "{9409CA29-5F95-994F-FCB6-5C430C3AC9AC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LeedCodeCpp", "LeedCodeCpp\LeedCodeC++.vcxproj", "{A423162E-1BDE-4A3B-B16F-23AE3DE232EC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LeedCodeC++", "LeedCodeCpp\LeedCodeC++.vcxproj", "{A423162E-1BDE-4A3B-B16F-23AE3DE232EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

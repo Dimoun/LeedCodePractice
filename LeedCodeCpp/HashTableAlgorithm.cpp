@@ -44,3 +44,52 @@ vector<int> HashTableAlgorithm::leetcode349_intersection(vector<int>& nums1, vec
 	return res;
 }
 
+bool HashTableAlgorithm::leetcode202_isHappy(int n) {
+	int temp = n;
+	unordered_set<int> set;
+
+	while (true)
+	{
+		int sum = 0;
+		while (temp != 0)
+		{
+			sum += (temp % 10) * (temp % 10);
+			temp /= 10;
+		}
+		
+		if(sum == 1) {
+			return true;
+		}
+		
+		if(set.find(sum) != set.end()) {
+			return false;
+		}
+		else
+		{
+			set.insert(sum);
+		}
+		temp = sum;
+	}
+
+	return true;
+}
+
+vector<int> HashTableAlgorithm::leetcode1_twoSum(vector<int>& nums, int target) {
+	
+	vector<int> res;
+	unordered_map<int, int> dic;
+	for(int i=0; i< nums.size(); i++) {
+		int temp = target - nums[i];
+		if (dic.contains(temp)) {
+			return res = { dic[temp], i };
+		}
+		else
+		{
+			dic[nums[i]] = i;
+		}
+	}
+	return res;
+}
+
+
+

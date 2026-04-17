@@ -1,8 +1,10 @@
-#include "pch.h"
+//#include "pch.h"
 #include "CppUnitTest.h"
 #include "../LeedCodeCpp/ArrayAlgorithm.h"
 #include "../LeedCodeCpp/LinkedListAlgorithm.h"
+#include "../LeedCodeCpp/HashTableAlgorithm.h"
 #include <vector>
+
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace std;
 
@@ -41,6 +43,13 @@ namespace CppUnit
 			ListNode* head = new ListNode(1,new ListNode(6,new ListNode(3,new ListNode(4,new ListNode(5,new ListNode(6,NULL))))));
 			ListNode* res = linkedListAlgorithm.leetcode203_removeElements(head, 6);
 
+		}
+
+		TEST_METHOD(HashTableTest)
+		{
+			HashTableAlgorithm hashTableAlgorithm;	
+			//hashTableAlgorithm.leetcode202_isHappy(19);
+			hashTableAlgorithm.leetcode1_twoSum(vector<int>{2,7,9,15},9);
 		}
 	};
 }
