@@ -8,5 +8,6 @@ public:
     vector<int> leetcode349_intersection(vector<int>& nums1, vector<int>& nums2);
     bool leetcode202_isHappy(int n);
     vector<int> leetcode1_twoSum(vector<int>& nums, int target);
+    int leetcode454_fourSumCount(vector<int>& nums1, vector<int>& nums2, vector<int>& nums3, vector<int>& nums4);
 };
 

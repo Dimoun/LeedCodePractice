@@ -91,5 +91,28 @@ vector<int> HashTableAlgorithm::leetcode1_twoSum(vector<int>& nums, int target) 
 	return res;
 }
 
+int HashTableAlgorithm::leetcode454_fourSumCount(vector<int>& nums1, vector<int>& nums2, vector<int>& nums3, vector<int>& nums4) {
+
+	unordered_map<int, int> map;
+	int res = 0;
+	for (int i : nums1) {
+		for (int j : nums2) {
+			map[i + j]++;
+		}
+	}
+	for (int i : nums3)
+	{
+		for (int j : nums4) {
+			
+			int tar = 0-(i + j);
+			if (map.find(tar) != map.end()) {
+				res += map[tar];
+			}
+		}
+	}
+	return res;
+}
+
+
 
 
