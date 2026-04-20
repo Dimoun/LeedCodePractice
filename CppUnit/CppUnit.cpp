@@ -3,6 +3,8 @@
 #include "../LeedCodeCpp/ArrayAlgorithm.h"
 #include "../LeedCodeCpp/LinkedListAlgorithm.h"
 #include "../LeedCodeCpp/HashTableAlgorithm.h"
+#include "../LeedCodeCpp/StringAlgorithm.h"
+
 #include <vector>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -40,16 +42,22 @@ namespace CppUnit
 		TEST_METHOD(LinkedListTest)
 		{
 			LinkedListAlgorithm linkedListAlgorithm;
-			ListNode* head = new ListNode(1,new ListNode(6,new ListNode(3,new ListNode(4,new ListNode(5,new ListNode(6,NULL))))));
-			ListNode* res = linkedListAlgorithm.leetcode203_removeElements(head, 6);
+			/*		ListNode* head = new ListNode(1,new ListNode(6,new ListNode(3,new ListNode(4,new ListNode(5,new ListNode(6,NULL))))));
+					ListNode* res = linkedListAlgorithm.leetcode203_removeElements(head, 6);*/
+			ListNode* head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6, NULL))))));
 
+			ListNode* res = linkedListAlgorithm.leetcode19_removeNthFromEnd(head, 2);
 		}
-
 		TEST_METHOD(HashTableTest)
 		{
 			HashTableAlgorithm hashTableAlgorithm;	
 			//hashTableAlgorithm.leetcode202_isHappy(19);
 			hashTableAlgorithm.leetcode1_twoSum(vector<int>{2,7,9,15},9);
+		}
+		TEST_METHOD(StringTest)
+		{
+			StringAlgorithm stringAlgorithm;
+			stringAlgorithm.leetcode344_reverseString(vector<char>{ 'h','e','l', 'l', 'o' });
 		}
 	};
 }

@@ -55,11 +55,13 @@
     <ClCompile Include="ArrayAlgorithm.cpp" />
     <ClCompile Include="HashTableAlgorithm.cpp" />
     <ClCompile Include="LinkedListAlgorithm.cpp" />
+    <ClCompile Include="StringAlgorithm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ArrayAlgorithm.h" />
     <ClInclude Include="HashTableAlgorithm.h" />
     <ClInclude Include="LinkedListAlgorithm.h" />
+    <ClInclude Include="StringAlgorithm.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Targets" />
 </Project>

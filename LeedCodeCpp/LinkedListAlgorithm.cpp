@@ -50,3 +50,52 @@ ListNode* LinkedListAlgorithm::leetcode24_swapPairs(ListNode* head) {
 	return dummyHead->next;
 }
 
+ListNode* LinkedListAlgorithm::leetcode19_removeNthFromEnd(ListNode* head, int n) {
+	
+	//Method 1 : 计算链表长度再删除
+	//ListNode* dummyHead = new ListNode(0);
+	//dummyHead->next = head;
+	//int count = 0;
+	//ListNode* temp = head;
+
+	//while (temp != nullptr)
+	//{
+	//	count++;
+	//	temp = temp->next;
+	//}
+	//if (count == 0)
+	//	return nullptr;
+
+	//int tar = count - n;
+	//temp = dummyHead;
+	//for (int i = 0; i < tar; i++)
+	//{
+	//	temp = temp->next;
+	//}
+	//temp->next = temp->next->next;
+
+	//return dummyHead->next;
+
+	//Method 2: 双指针：
+
+	ListNode* dummyHead = new ListNode(0);
+	dummyHead->next = head;
+	ListNode* slow = dummyHead;
+	ListNode* fast = dummyHead->next;
+	
+	while (n > 0 && fast != nullptr)
+	{
+		n--;
+		fast = fast->next;
+	}
+
+	while (fast != nullptr)
+	{
+		slow = slow->next;
+		fast = fast->next;
+	}
+	slow->next = slow->next->next;
+
+	return dummyHead->next;
+}
+

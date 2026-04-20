@@ -14,5 +14,6 @@ public:
 
 	ListNode* leetcode206_reverseList(ListNode* head);
 	ListNode* leetcode24_swapPairs(ListNode* head);
+	ListNode* leetcode19_removeNthFromEnd(ListNode* head, int n);
 };
 
