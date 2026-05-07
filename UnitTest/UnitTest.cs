@@ -162,7 +162,8 @@ namespace UnitTestProject
             //hashTable.LeetCode_242_IsAnagram("anagram", "nagaram");
             //hashTable.LeetCode_349_Intersection(new int[] { 1, 2, 2, 1 }, new int[] { 2, 2 });
             //hashTable.LeetCode_15_ThreeSum(new int[] { -1, 0, 1, -1,1,0});
-            var a = hashTable.LeetCode_18_FourSum(new[] { 1000000000, 1000000000, 1000000000, 1000000000 },-294967296);
+            //var a = hashTable.LeetCode_18_FourSum(new[] { 1000000000, 1000000000, 1000000000, 1000000000 },-294967296);
+            hashTable.LeetCode_128_LongestConsecutive(new int[] { 9, 1, 4, 7, 3, -1, 0, 5, 8, -1, 6 });
         }
 
         [TestMethod]
@@ -171,7 +172,8 @@ namespace UnitTestProject
             StringAlgorithms stringAlgorithms = new StringAlgorithms();
             ////stringAlgorithms.LeetCode_541_ReverseStr("a",2);
             //stringAlgorithms.LeetCode_151_ReverseWords(" hello world  ");
-            stringAlgorithms.LeetCode_28_StrStr("a", "a");
+            //stringAlgorithms.LeetCode_28_StrStr("a", "a");
+            stringAlgorithms.LeetCode_438_FindAnagrams("cbaebabacd", "abc");
         }
 
         [TestMethod]
@@ -196,7 +198,9 @@ namespace UnitTestProject
         public void Test_LeetCode_Tree()
         {
             TreeAlgorithms treeAlgorithms = new TreeAlgorithms();
-            treeAlgorithms.LeetCode_144_PreorderTraversal(new TreeNode(1, null,
+            //treeAlgorithms.LeetCode_144_PreorderTraversal(new TreeNode(1, null,
+            //    new TreeNode(2, new TreeNode(3, null, null), null)));
+            treeAlgorithms.LeetCode_94_InorderTraversal(new TreeNode(1, null,
                 new TreeNode(2, new TreeNode(3, null, null), null)));
         }
     }

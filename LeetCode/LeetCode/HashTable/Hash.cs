@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices.Marshalling;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -308,6 +309,53 @@ namespace LeetCode.LeetCode.Hash
             }
 
             return res;
+        }
+        public int LeetCode_128_LongestConsecutive(int[] nums)
+        {
+            //Method 1
+            //    Array.Sort(nums);
+            //HashSet<int> set =  nums.ToHashSet();
+
+            //int sum = 0;
+            //int index = 1;
+            //foreach (var item in set)
+            //{
+            //    if (set.Contains(item + 1))
+            //    {
+            //        index++;
+            //    }
+            //    else
+            //    {
+            //        sum = Math.Max(index, sum);
+            //        index = 1;
+            //    }
+            //}
+
+            //return sum;
+
+            //Method2 
+            if (nums.Length == 0) return 0;
+
+            var seen = new HashSet<int>(nums);
+
+            int len = 1, maxlen = 1;
+
+            foreach (var num in seen)
+            {
+                if (!seen.Contains(num - 1))            //重新开始计数时
+                {
+                    len = 1;
+                    while (seen.Contains(num + len))
+                    {
+                        seen.Remove(num + len);         //移除该数，防止重复计算
+
+                        ++len;                          //用++len 会比 len++ 性能好
+                    }
+                    maxlen = Math.Max(len, maxlen);
+                }
+            }
+
+            return maxlen;
         }
     }
 }

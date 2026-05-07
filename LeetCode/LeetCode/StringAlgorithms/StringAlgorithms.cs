@@ -101,5 +101,32 @@ namespace LeetCode.LeetCode.StringAlgorithms
             string ss = (s + s).Substring(1, (s + s).Length - 2);
             return ss.Contains(s);
         }
+        public IList<int> LeetCode_438_FindAnagrams(string s, string p)
+        {
+            IList<int> res = new List<int>();
+            int len = p.Length;
+            bool isExisted = true;
+            int[] arr = new int[26];
+            for (int i = 0; i < len; i++)
+            {
+                arr[p[i] - 'a']++;
+            }
+            for (int left = 0, right = 0; right < s.Length; right++)
+            {
+                arr[s[right] - 'a']--;
+                while (arr[s[right] - 'a'] < 0)
+                {
+                    arr[s[left] - 'a']++;
+                    left++;
+                }
+                if (right - left + 1 == p.Length)
+                {
+                    res.Add(left);
+                }
+            }
+
+
+            return res;
+        }
     }
 }
